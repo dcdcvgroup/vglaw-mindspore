@@ -1,0 +1,11 @@
+home = '/home/zekang/vglaw/'
+work_dir = home + 'logdir/'
+vit_model_path = home + 'checkpoint/'
+mask_path = '/home/zekang/vglaw/data/images/saiapr_tc-12/res/masks'
+config_root = '/home/zekang/vglaw/tools/.cache'
+config_root1 = home + 'tools/.cache'
+image_root_merge = '/home/zekang/vglaw/data/images'
+image_root_coco = '/home/zekang/vglaw/data/images/coco/images/train2014'
+image_root_referit = '/home/zekang/vglaw/data/images/saiapr_tc-12/saiaprtc12'
+extra_lib_path = '/home/zekang/anaconda3/envs/mindspore/lib/python3.8/site-packages'
+

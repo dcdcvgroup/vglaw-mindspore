@@ -1,0 +1,22 @@
+mpirun -n 4 python /home/zekang/vglaw/src/ms_train.py \
+--batch_size=1 \
+--batch_sum=256 \
+--dataset=refcoco+ \
+--splitBy=unc \
+--experiment_name=mindspore_vglaw_refcoco+ \
+--short_comment=mindspore_vglaw_refcoco+ \
+--law_type=svd \
+--img_size=448 \
+--vit_model=vitdet_b_mrcnn \
+--pretrained_path='/home/zekang/vglaw/logdir/mindspore_vglaw_refcoco+/runs/(Jan04_23)mindspore_vglaw_refcoco+/epoch-best.ckpt' \
+--translate \
+--lr_lang=1e-5 \
+--lr_visual=1e-5 \
+--lr_base=1e-4 \
+--lr_scheduler=step \
+--max_epochs=20 \
+--drop_epochs=10 \
+--log_freq=10 \
+--use_mask \
+--mode_name=PYNATIVE \
+--save_ckpt_dir=/home/zekang/vglaw/logdir/refcoco+
